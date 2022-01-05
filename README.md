@@ -10,11 +10,12 @@
 <p align="justify">
   In this section, I explain the Q-learning based navigation and a brief about this method. For a better understanding of RL or Q-learning, google it and you can find tons of documents. 
   </p>
-<p align="justify">
-  RL is an area of machine learning inspired by behaviourist psychology, concerned with how to take actions in an environment to maximize cumulative rewards. In fact, an agent does not have any data about the environment and just uses experiences to find an optimal action. The agent works in an environment based on Markov decision process (MDP) and for evaluation of its performance, there are two functions: value-function (state value) and Q-function (action value). The first function calculates the value of states under a policy and the latter represents the value of state-action pairs under a policy.
-  </p>
 
-Action-value techniques involve fitting a function, called the Q-values, that captures the expected return for taking a particular action at a particular state, and then following a particular policy thereafter [^1]. One form of Q-values based RL is Q-learning in which the agent maintains a table of *Q[S, A]*, where *S* is the set of states and *A* is the set of actions. Below figure shows the process of Q-learning.
+RL is an area of machine learning inspired by behaviourist psychology, concerned with how to take actions in an environment to maximize cumulative rewards. In fact, an agent does not have any data about the environment and just uses experiences to find an optimal action [^1]. The agent works in an environment based on Markov decision process (MDP) and for evaluation of its performance, there are two functions: value-function (state value) and Q-function (action value). The first function calculates the value of states under a policy and the latter represents the value of state-action pairs under a policy.
+
+<img src="https://drive.google.com/uc?export=view&id=1c9LnShrP586bfPXWtju8ge15u5Lmiqcy" width="500" height="200" alt="RL process" align="middle">
+
+Action-value techniques involve fitting a function, called the Q-values, that captures the expected return for taking a particular action at a particular state, and then following a particular policy thereafter [^2]. One form of Q-values based RL is Q-learning in which the agent maintains a table of *Q[S, A]*, where *S* is the set of states and *A* is the set of actions. Below figure shows the process of Q-learning.
 
 <img src="https://drive.google.com/uc?export=view&id=1vmV6-BGJZqgsDGIoZUi84vCrAbnDn7eK" width="700" height="250" alt="Q-learning process" align="middle">
 
@@ -38,4 +39,7 @@ As mentioned above, Q-table updates in every cycle of execution of an action and
     </p>
 
 ## References
-[^1]: [O'Donoghue, B., Munos, R., Kavukcuoglu, K., & Mnih, V. (2016). Combining policy gradient and Q-learning. arXiv preprint arXiv:1611.01626](https://arxiv.org/abs/1611.01626)
+
+[^1]: Sutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press
+
+[^2]: [O'Donoghue, B., Munos, R., Kavukcuoglu, K., & Mnih, V. (2016). Combining policy gradient and Q-learning. arXiv preprint arXiv:1611.01626](https://arxiv.org/abs/1611.01626)
