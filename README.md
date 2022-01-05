@@ -18,8 +18,13 @@ Action-value techniques involve fitting a function, called the Q-values, that ca
 
 ![Q-learning process](https://drive.google.com/uc?export=view&id=1vmV6-BGJZqgsDGIoZUi84vCrAbnDn7eK)
 
+As mentioned above, Q-table updates in every cycle of execution of an action and receiving a reward based on the below equation:
 
+![Q-learning formula](https://drive.google.com/uc?export=view&id=1VpDmhPo3sUf7Kth1KydLVZT0fHjGefxf) 
 
+Therefore, the reward function should be determined. Since the world that we want to test our program is a limited discrete square one, we can consider positive and negative rewards for each area. At first, see the working environment which consists of 16 areas and 4 obstacles.You can consider other environments with different features.
+
+![environment](https://drive.google.com/uc?export=view&id=1zc_CUuXLxaJQBaTBaqrfQ2AtNzdpUuCZ) 
 
 
 
