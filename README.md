@@ -41,5 +41,4 @@ As mentioned above, Q-table updates in every cycle of execution of an action and
 ## References
 
 [^1]: Sutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press
-
 [^2]: [O'Donoghue, B., Munos, R., Kavukcuoglu, K., & Mnih, V. (2016). Combining policy gradient and Q-learning. arXiv preprint arXiv:1611.01626](https://arxiv.org/abs/1611.01626)
