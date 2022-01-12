@@ -73,9 +73,9 @@ in third terminal: `python ~catkin_ws/src/qlearning_navigation/scripts/main_prog
 
 if you run by default, you will see the Turtlebot is moving from location 1 to location 15. For changing them, go to the `main_prog.py` file in `~catkin_ws/src/qlearning_navigation/scripts/` folder and alter these below lines. The locations should write in this style L1, L2, L3, ...
 
-`start_location = "L1"
+`start_location = "L1"`
 
-end_location = "L15"`
+`end_location = "L15"`
 
 
 ## References
