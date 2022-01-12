@@ -37,6 +37,26 @@ As mentioned above, Q-table updates in every cycle of execution of an action and
 <p align="justify">
     Q-table is a 16 * 16 zero table that will be updated during episodes. In the Q-learning program, the user can determine the first and last location of the robot. Then robot tries to find an optimal path from the first point to the last point without hitting walls or obstacles. The path from the start location to the end location sends in the form of the goal's sequences that is explained in the next section. Summarily, in the programme, locations convert to the dedicated number of each area and then the Bellman equation updates in a loop ( total episode). Finally, the path with the highest value in the Q table will be chosen as an optimal path from start to end location. You can review the code in "qlearning.py" file.
     </p>
+    
+# Sending a Sequence of Goals to ROS
+
+After Q-learning calculations for finding the optimal path from starting point to end location, it's necessary to send the goals of the robot's position as a node in ROS Navigation Stack. For more information about the program, visit this link: [Sending a sequence of Goals to ROS NavStack with Python](https://hotblackrobotics.github.io/en/blog/2018/01/29/seq-goals-py/) 
+
+# Steps to Run the Code
+In order to build an environment similar to mentioned one and deactivate the robot's sensors, put these files in suitable locations. Note that, due to working just based on the learning, the map is prepared beforehand because, without a laser scanner, it is hard and inefficient for the robot to mapping. Follow the below steps to run the code successfully:
+
+1- Setup a workspace `catkin_ws` and create folder `src`. Then initialize `~/catkin_ws`.
+
+2- Copy the `qlearning_navigation` folder from this repository and paste it in `~/catkin_ws/src` folder.
+
+3- will be completed....
+
+
+
+
+
+
+
 
 ## References
 
