@@ -8,7 +8,7 @@
   <arg name="open_rviz" default="true"/>
 
   <!-- Map server -->
-  <arg name="map_file" default="$(find simple_navigation_goals)/config/stage_2/map.yaml"/>
+  <arg name="map_file" default="$(find simple_navigation_goals)/config/stage_2_map/map.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
   </node>
 
