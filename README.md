@@ -47,7 +47,7 @@ In order to build an environment similar to mentioned one and deactivate the rob
 
 1- Setup a workspace `catkin_ws` and create folder `src`. Then initialize `~/catkin_ws`.
 
-2- Copy the `qlearning_navigation` folder from this repository and paste it in `~/catkin_ws/src` folder.
+2- Copy the `qlearning_navigation` folder or Clone this repository into `~/catkin_ws/src` folder.
 
 3- Install essential packages of Turtlebot3 from [THIS LINK](https://github.com/ROBOTIS-GIT/turtlebot3).
 
@@ -69,7 +69,7 @@ in first terminal: `roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch`
 
 in second terminal: `roslaunch qlearning_navigation qlearning_navigation.launch`
 
-in third terminal: `python ~catkin_ws/src/qlearning_navigation/scripts/main_prog.py`
+in third terminal: `python catkin_ws/src/qlearning_navigation/scripts/main_prog.py`
 
 if you run by default, you will see the Turtlebot is moving from location 1 to location 15. For changing them, go to the `main_prog.py` file in `~catkin_ws/src/qlearning_navigation/scripts/` folder and alter these below lines. The locations should write in this style L1, L2, L3, ...
 
