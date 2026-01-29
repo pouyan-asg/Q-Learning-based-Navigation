@@ -29,7 +29,7 @@ As mentioned above, Q-table updates in every cycle of execution of an action and
     Therefore, the reward function should be determined. Since the world that we want to test our program is a limited discrete square one, we can consider positive and negative rewards for each area. At first, see the working environment which consists of 16 areas and 4 obstacles. You can consider other environments with different features.
     </p>
 
-<img src="https://drive.google.com/uc?export=view&id=1zc_CUuXLxaJQBaTBaqrfQ2AtNzdpUuCZ" alt="environment" align="middle">
+![Wall-e environment](env.png)
 
 <p align="justify">
     Each area is known with its number and the robot can determine its optimal path for going from one point to another without any sensor. When the robot wants to go from one area to another neighbourhood area, it receives a +1 reward. If there is an obstacle in the neighbourhood area, it will receive a -10 reward. For other options, there is not any reward. Thus, you can find with such a reward table, we guide the robot in the safest way. For instance, when the robot starts from the first area, it will receive +1 if it goes to areas number 2 and 5. Also, it will receive -10 and 0, if it goes to the sixth area and others, respectively. The reward for the last location is equal to 900. The rewards value and formation can be changed with respect to each environment.
